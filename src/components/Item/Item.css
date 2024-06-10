@@ -1,0 +1,14 @@
+.container {
+   background-color: #ccd;
+   border-radius: 20px;
+   margin: 20px;
+   color: black;
+   align-items: center;
+}
+h3 {
+   font-size: 45px;
+}
+
+img {
+   height: 150px;
+}
