@@ -1,22 +1,38 @@
-import './NavBar.css'
-import logo from '../../assets/img/logo.png'
-import CartWidget from "../CartWidget/CartWidget"
-
+import React from 'react';
+import './NavBar.css';
+import logo from '../../assets/img/logo.png';
+import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+
+
+
    return (
       <div className="NavBar">
          <div className="nav-logo">
-            <img className='logo' src={logo} alt='logo'></img>
+            <Link to={'/'}><img className='logo' src={logo} alt='logo'></img></Link>
          </div>
-         <h2 className="nav-titulo">Mundo Virtual</h2>
+
+         <Link to={'/'}><h2 className="nav-titulo">Mundo Virtual</h2></Link>
+
          <div className="nav-items">
-            <button><a href="#">Inicio</a></button>
-            <button><a href="#">Categoria</a></button>
-            <button><a href="#">Contactanos</a></button>
+
+            <button><Link to='/'>Inicio</Link></button>
+            <button><Link to='/category/celulares'>Celulares</Link></button>
+            <button><Link to='/category/juegos'>Juegos</Link></button>
+
             <CartWidget />
+
          </div>
       </div>
    )
 }
-export default NavBar
+
+export default NavBar;
+
+
+
+
+
+

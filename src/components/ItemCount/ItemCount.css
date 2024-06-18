@@ -1,4 +1,39 @@
-.btn-count, .btn-agregar {
+.btn-count {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.btn-count button {
+   background-color: lightcoral;
+   color: white;
+   border: none;
+   padding: 5px;
+   cursor: pointer;
+}
+
+.btn-count button:hover {
+   background-color: darkred;
+}
+
+.btn-agregar {
+   background-color: lightgreen;
+   color: white;
+   border: none;
+   padding: 5px;
+   cursor: pointer;
+}
+
+.btn-agregar:disabled {
+   background-color: grey;
+}
+
+
+
+
+
+
+/* .btn-count, .btn-agregar {
    font-size: 15px;
    text-decoration: none;
    margin: 10px;
@@ -9,4 +44,4 @@
 span {
    font-size: 20px;
    margin: 10px;
-}
+} */

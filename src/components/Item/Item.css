@@ -1,14 +1,23 @@
 .container {
-   background-color: #ccd;
-   border-radius: 20px;
-   margin: 20px;
-   color: black;
-   align-items: center;
-}
-h3 {
-   font-size: 45px;
+   padding: 10px;
+   margin-bottom: 20px;
 }
 
-img {
-   height: 150px;
+.producto {
+   border: 1px solid red;
+   padding: 10px;
+   width: calc(60% - 10px);
+   margin-bottom: 20px;
+   justify-content: space-between;
+}
+
+.producto img {
+   max-width: 50%;
+   height: auto;
+}
+
+.productos-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
 }
